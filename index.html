@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <link rel="icon" href="logo.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>RG - Rate Games</title>
+</head>
+<body>
+  <nav>
+    <div class="search-wrap">
+      <input type="text" placeholder="ابحث عن لعبة...">
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">الرئيسية</a></li>
+      <li><a href="games.html">الألعاب</a></li>
+      <li><a href="check.html">تحقق من جهازك</a></li>
+      <li><a href="favorites.html">المفضلة</a></li>
+    </ul>
+    <div class="logo">RG</div>
+  </nav>
+
+  <div class="filters">
+    <button class="filter-btn active" data-genre="">الكل</button>
+    <button class="filter-btn" data-genre="4">أكشن</button>
+    <button class="filter-btn" data-genre="5">RPG</button>
+    <button class="filter-btn" data-genre="2">شوتر</button>
+    <button class="filter-btn" data-genre="3">مغامرات</button>
+    <button class="filter-btn" data-genre="7">لغز</button>
+    <button class="filter-btn" data-genre="1">سباقات</button>
+  </div>
+
+  <div class="hero">
+    <h1>اعرف إيه الألعاب <span>اللي هتشتغل</span> على جهازك</h1>
+    <p>حط مواصفات جهازك وهنقولك على طول</p>
+    <button class="btn-primary" onclick="location.href='check.html'">جرب دلوقتي</button>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <h2 class="section-title">أشهر الألعاب</h2>
+      <a href="games.html">عرض الكل</a>
+    </div>
+    <div class="games-grid" id="games-grid"></div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
