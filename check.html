@@ -10,16 +10,11 @@
 </head>
 <body>
     <nav>
+        <button class="hamburger" onclick="document.getElementById('dropdown').classList.toggle('open')">☰</button>
+        <div class="logo">RG</div>
         <div class="search-wrap">
             <input type="text" placeholder="ابحث عن لعبة...">
         </div>
-        <ul class="nav-links">
-            <li><a href="index.html">الرئيسية</a></li>
-            <li><a href="games.html">الألعاب</a></li>
-            <li><a href="check.html" class="active">تحقق من جهازك</a></li>
-            <li><a href="favorites.html">المفضلة<link rel="icon" href="logo.png" type="image/png"></a></li>
-        </ul>
-        <div class="logo">RG</div>
     </nav>
     <div class="check-section" id="check-section"></div>
     <script src="main.js"></script>
